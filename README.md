@@ -10,3 +10,11 @@ Our Deque interface contains all the methods of the java api. We will use doubly
 3.5) Check over implemented methods, make sure they are efficient.
 4) Implement iterator-based methods.
 5) Finish implementation. 
+
+# Summary of Development Plan: 
+0) Picked out which methods in the API are essential that we should implement first and which ones are variants on the old methods and/or are not necessary that we could implement later on if we have time.
+1) Wrote out our rationale for picking our data structure and our to-do list
+1) Created the Deque interface with all the methods commented out except for the current one that we're working on.
+2) Created QQKachoo with the appropriate underlying container.
+3) Develop and test an uncommented method until we're sure it works.
+4) Repeat step 3 for the next uncommented method, which should be the next most important method, until all methods are successfully implemented. 
