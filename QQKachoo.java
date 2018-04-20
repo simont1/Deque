@@ -57,6 +57,15 @@ public class QQKachoo<Card> implements Deque<Card>{
 	_tail = _tail.getPrev();
 	return temp;
     }
+    public boolean contains(Card e){
+	DLLNode temp = _head;
+	for (int i = 0; i < _size; i++) {
+	    if (temp.getCargo().equals(e))
+		return true;
+	    temp = temp.getNext();
+	}
+	return false;
+    }
     public String toString(){
     	String retstr = "";
 	DLLNode a = _head;

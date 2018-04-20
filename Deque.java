@@ -7,7 +7,7 @@ public interface Deque<Card>{
 
     public void addLast(Card e);
 
-    //public boolean contains(Card e );
+    public boolean contains(Card e);
 
     //public Iterator<Card> descendingIterator();
     

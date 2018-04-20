@@ -6,6 +6,9 @@ public class QQKachoo<Card> implements Deque<Card>{
 	_tail = new DLLNode<Card>(null, null, null);
 	_size = 0;
     }
+    public int size(){
+	return _size;
+    }
     public boolean add(Card e){
 	addLast(e);
 	return true;
@@ -31,6 +34,28 @@ public class QQKachoo<Card> implements Deque<Card>{
 	    _tail = temp;
 	}
 	_size++;
+    }
+    public Card element(){
+	return _head.getCargo();
+    }
+    public Card getFirst(){
+	return element();
+    }
+    public Card getLast(){
+	return _tail.getCargo();
+    }
+    public Card remove(){
+	Card temp = _head.getCargo();
+	_head = _head.getNext();
+	return temp;
+    }
+    public Card removeFirst(){
+	return remove();
+    }
+    public Card removeLast(){
+	Card temp = _tail.getCargo();
+	_tail = _tail.getPrev();
+	return temp;
     }
     public String toString(){
     	String retstr = "";
