@@ -1,6 +1,4 @@
 public interface Deque<Card>{
-    public int size();
-    
     public boolean add(Card e);
 
     public void addFirst(Card e);
@@ -52,4 +50,5 @@ public interface Deque<Card>{
     public Card removeLast();
 
     //public boolean removeLastOccurence(Object o);
-}
+
+    public int size();
