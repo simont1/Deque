@@ -1,6 +1,3 @@
-//GreenTomatoes(Brandon Chong, Thet Htay Zaw, Brian Lin)
-//APCS2 pd2
-//QQKachoo Driver
 /*
 __---~~~~--__                      __--~~~~---__
 `\---~~~~~~~~\\                    //~~~~~~~~---/'
@@ -22,75 +19,73 @@ __---~~~~--__                      __--~~~~---__
  |>>>>>>||                            ||<<<<<<|
 */
 
-public class DequeTester2{
+public class DequeDriver{
+
   public static void main(String[] args) {
-    QQKachoo<String> iscream = new QQKachoo<String>();
+
+    QQKachoo<String> boats = new QQKachoo<String>();
 
     System.out.println("-----Adding to front------");
-    iscream.addFirst("Chocolate");
-    System.out.println(iscream.peekFirst()); //Chocolate
-    iscream.addFirst("Vanilla");
-    System.out.println(iscream.peekFirst()); //Vanilla
-    iscream.addFirst("Strawberry");
-    System.out.println(iscream.peekFirst()); //Strawberry
-    iscream.addFirst("Mint");
-    System.out.println(iscream.peekFirst()); //Mint
+    boats.addFirst("Yacht(y)");
+    System.out.println("Added: " + boats.peekFirst()); //Yacht(y)
+    boats.addFirst("Cruise");
+    System.out.println("Added: " + boats.peekFirst()); //Cruise
+    boats.addFirst("Sail");
+    System.out.println("Added: " + boats.peekFirst()); //Sail
+    boats.addFirst("Row");
+    System.out.println("Added: " + boats.peekFirst()); //Row
 
     System.out.println("");
 
     System.out.println("------Current Deque------");
-    System.out.println(iscream); //Mint Strawberry Vanilla Chocolate
+    System.out.println(boats); //Row Sail Cruise Yacht(y)
 
     System.out.println("");
 
     System.out.println("-----Adding to end------");
-    iscream.addLast("Pistachio");
-    System.out.println(iscream.peekLast()); //Pistachio
-    iscream.addLast("Coffee");
-    System.out.println(iscream.peekLast()); //Coffee
-    iscream.addLast("S'mores");
-    System.out.println(iscream.peekLast()); //S'mores
+    boats.addLast("Speed");
+    System.out.println("Added: " + boats.peekLast()); //Speed
+    boats.addLast("Fishing");
+    System.out.println("Added: " + boats.peekLast()); //Fishing
+    boats.addLast("Lil'");
+    System.out.println("Added: " + boats.peekLast()); //Lil
 
     System.out.println("");
 
     System.out.println("------Current Deque------");
-    System.out.println(iscream); //Mint Strawberry Vanilla Chocolate Pistachio Coffee S'mores
+    System.out.println(boats); //Row Sail Cruise Yacht(y) Speed Fishing Lil
 
     System.out.println("");
 
     System.out.println("-----Removing from front-----");
-    iscream.pollFirst(); //Mint  dies
-    System.out.println(iscream.peekFirst()); //Strawberry
+    boats.pollFirst(); //Row  dies
+    System.out.println("New front: " + boats.peekFirst()); //Sail
 
     System.out.println("");
 
     System.out.println("-----Removing from end-----");
-    iscream.pollLast(); //S'mores dies
-    System.out.println(iscream.peekLast()); //Coffee
+    boats.pollLast(); //Lil dies
+    System.out.println("New end: " + boats.peekLast()); //Fishing
 
     System.out.println("");
 
     System.out.println("------Current Deque------");
-    System.out.println(iscream); //Mint Strawberry Vanilla Chocolate Pistachio Coffee S'mores
+    System.out.println(boats); //Sail Cruise Yacht(y) Speed Fishing
 
     System.out.println("");
 
     System.out.println("------REMOVING EVERYTHING------");
-    iscream.pollFirst();
-    System.out.println(iscream);
-    iscream.pollLast();
-    System.out.println(iscream);
-    iscream.pollFirst();
-    System.out.println(iscream);
-    iscream.pollLast();
-    System.out.println(iscream);
-    iscream.pollFirst();
-    System.out.println(iscream);
-    System.out.println("Empty now?: "+iscream.isEmpty()); //true
+    boats.pollFirst();
+    System.out.println(boats);
+    boats.pollLast();
+    System.out.println(boats);
+    boats.pollFirst();
+    System.out.println(boats);
+    boats.pollLast();
+    System.out.println(boats);
+    boats.pollFirst();
+    System.out.println(boats);
+    //System.out.println("Empty now?: " + boats.isEmpty()); //true
   }
-
-
-
-
 
 }
