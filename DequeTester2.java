@@ -1,5 +1,5 @@
 //GreenTomatoes(Brandon Chong, Thet Htay Zaw, Brian Lin)
-//APCS2 pd1
+//APCS2 pd2
 //QQKachoo Driver
 /*
 __---~~~~--__                      __--~~~~---__
