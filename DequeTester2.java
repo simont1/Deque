@@ -1,4 +1,4 @@
-//StillCold (Fiona Cai, Kevin Feng, Alexia Leong)
+//GreenTomatoes(Brandon Chong, Thet Htay Zaw, Brian Lin)
 //APCS2 pd1
 //QQKachoo Driver
 /*
@@ -22,7 +22,7 @@ __---~~~~--__                      __--~~~~---__
  |>>>>>>||                            ||<<<<<<|
 */
 
-public class DequeDriver_FC{
+public class DequeTester2{
   public static void main(String[] args) {
     QQKachoo<String> iscream = new QQKachoo<String>();
 
