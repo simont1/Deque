@@ -30,13 +30,13 @@ public class DequeTester2{
 
     System.out.println("-----Adding to front------");
     boats.addFirst("Yacht(y)");
-    System.out.println("Added: " + boats.peekFirst()); //Yacht(y)
+    System.out.println("Added: " + boats.getFirst()); //Yacht(y)
     boats.addFirst("Cruise");
-    System.out.println("Added: " + boats.peekFirst()); //Cruise
+    System.out.println("Added: " + boats.getFirst()); //Cruise
     boats.addFirst("Sail");
-    System.out.println("Added: " + boats.peekFirst()); //Sail
+    System.out.println("Added: " + boats.getFirst()); //Sail
     boats.addFirst("Row");
-    System.out.println("Added: " + boats.peekFirst()); //Row
+    System.out.println("Added: " + boats.getFirst()); //Row
 
     System.out.println("");
 
@@ -47,11 +47,11 @@ public class DequeTester2{
 
     System.out.println("-----Adding to end------");
     boats.addLast("Speed");
-    System.out.println("Added: " + boats.peekLast()); //Speed
+    System.out.println("Added: " + boats.getLast()); //Speed
     boats.addLast("Fishing");
-    System.out.println("Added: " + boats.peekLast()); //Fishing
+    System.out.println("Added: " + boats.getLast()); //Fishing
     boats.addLast("Lil'");
-    System.out.println("Added: " + boats.peekLast()); //Lil
+    System.out.println("Added: " + boats.getLast()); //Lil
 
     System.out.println("");
 
@@ -61,14 +61,14 @@ public class DequeTester2{
     System.out.println("");
 
     System.out.println("-----Removing from front-----");
-    boats.pollFirst(); //Row  dies
-    System.out.println("New front: " + boats.peekFirst()); //Sail
+    boats.removeFirst(); //Row  dies
+    System.out.println("New front: " + boats.getFirst()); //Sail
 
     System.out.println("");
 
     System.out.println("-----Removing from end-----");
-    boats.pollLast(); //Lil dies
-    System.out.println("New end: " + boats.peekLast()); //Fishing
+    boats.removeLast(); //Lil dies
+    System.out.println("New end: " + boats.getLast()); //Fishing
 
     System.out.println("");
 
@@ -78,15 +78,15 @@ public class DequeTester2{
     System.out.println("");
 
     System.out.println("------REMOVING EVERYTHING------");
-    boats.pollFirst();
+    boats.removeFirst();
     System.out.println(boats);
-    boats.pollLast();
+    boats.removeLast();
     System.out.println(boats);
-    boats.pollFirst();
+    boats.removeFirst();
     System.out.println(boats);
-    boats.pollLast();
+    boats.removeLast();
     System.out.println(boats);
-    boats.pollFirst();
+    boats.removeFirst();
     System.out.println(boats);
     //System.out.println("Empty now?: " + boats.isEmpty()); //true
   }
