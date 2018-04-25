@@ -1,3 +1,6 @@
+//GreenTomatoes (Brandon Chong, Thet Htay Zaw, Brian Lin)
+//APCS2
+
 /*
 __---~~~~--__                      __--~~~~---__
 `\---~~~~~~~~\\                    //~~~~~~~~---/'
@@ -19,7 +22,7 @@ __---~~~~--__                      __--~~~~---__
  |>>>>>>||                            ||<<<<<<|
 */
 
-public class DequeDriver{
+public class DequeTester2{
 
   public static void main(String[] args) {
 
