@@ -4,7 +4,7 @@ Our Deque interface contains all the methods of the java api. We will use doubly
 
 # To Do Plan:
 0) ~~Create class QQKachoo to implement Deque interface.~~ 
-1) ~~Implement size() method. ~~
+1) ~~Implement size() method.~~
 2) ~~Implement all forms of add.~~
 3) ~~Implement all forms of remove~~
 4) ~~Implement all forms of get~~
@@ -22,6 +22,7 @@ Our Deque interface contains all the methods of the java api. We will use doubly
 2) Created QQKachoo with the appropriate underlying container.  (Check)
 3) Develop and test an uncommented method until we're sure it works. (Check)
 4) Repeat step 3 for the next uncommented method, which should be the next most important method, until all methods are successfully implemented. 
+5) Add exception handling
 
 # Changes: 
 - Used white space better for style
