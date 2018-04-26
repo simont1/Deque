@@ -12,8 +12,7 @@ Our Deque interface contains all the methods of the java api. We will use doubly
 6) ~~Implement contains() method.~~
 7) ~~Override toString~~
 8) ~~Check over implemented methods, make sure they are efficient.~~
-9) ~~Exception handling~~
-10) ~~Finish implementation.~~ 
+9) ~~Finish implementation.~~ 
 
 # Summary of Development Plan: 
 0) Picked out which methods in the API are essential that we should implement first and which ones are variants on the old methods and/or are not necessary that we could implement later on if we have time.  (Check)
@@ -22,7 +21,6 @@ Our Deque interface contains all the methods of the java api. We will use doubly
 2) Created QQKachoo with the appropriate underlying container.  (Check)
 3) Develop and test an uncommented method until we're sure it works. (Check)
 4) Repeat step 3 for the next uncommented method, which should be the next most important method, until all methods are successfully implemented. 
-5) Add exception handling
 
 # Changes: 
 - Used white space better for style
@@ -30,4 +28,3 @@ Our Deque interface contains all the methods of the java api. We will use doubly
 - Fixed methods that were not working properly 
 - Fixed readMe to be more clear 
 - Gave better variable names 
-- Added exception-handling 
